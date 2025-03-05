@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yaroslav Hinda</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">
+            Yaroslav Hinda
+        </div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <!-- <li><a href="#experience">Experience</a></li> -->
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>  
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Yaroslav Hinda</div>
+        <div class="hamburger-menu">
+          <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="menu-links">
+            <li><a href="#about" onclick="toggleMenu()">About</a></li>
+            <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+          </div>
+        </div>
+      </nav>
+
+      <section id="profile">
+        <div class="section_pic-container">
+          <img src="./assets/profile-picture.png" alt="">
+        </div>
+        <div class="section_text">
+          <p class="section_text_p1">Hello, I'm</p>
+          <h1 class="title">Yaroslav Hinda</h1>
+          <p class="section_text_p2">Data Analyst</p>
+          <div class="btn-container">
+            <button class="btn btn-color-2" onclick="window.open('./assets/resume.pdf')">
+              Resume
+            </button>
+            <button class="btn btn-color-2" onclick="location.href='./#contact'">
+              Contact Me
+            </button>
+          </div>
+          <div id="socials-container">
+            <img src="./assets/linkedin.svg" alt="Linkedin profile" class="icon" onclick="location.href='https://www.linkedin.com/in/yaroslavhinda/'">
+            <img src="./assets/github.svg" alt="Github profile" class="icon" onclick="location.href='https://github.com/Yaroslav1405'">
+          </div>
+        </div>
+      </section>
+
+      <section id="about">
+        <p class="section_text_p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+          <div class="about-details-container">
+            <div class="about-containers">
+              <div class="details-container">
+                <img
+                  src="./assets/education.svg"
+                  alt="Education icon"
+                  class="icon"
+                />
+                <h3>Education</h3>
+                <p>B.S. Computer Science<br />Data Science: Computer Science Analytics Certificate</p>
+              </div>
+              <div class="details-container">
+                <img
+                  src="./assets/skills.svg"
+                  alt="Skills icon"
+                  class="icon"
+                />
+                <h3>Skills</h3>
+                <p><strong>Programming & Data Analysis:</strong> Python, SQL, Excel, Power BI</p>
+                <p><strong>Libraries & Tools:</strong> Pandas, NumPy, Scikit-Learn, Matplotlib, DSPy, Git, Flet, Tkinter</p>
+                <p><strong>Other:</strong> MATLAB, C++, C</p>
+              </div>
+            </div>
+            <div class="details-container">
+              <div class="text-container">
+                <p>
+                  I’m Yaroslav Hinda, a Clinical Research Data Specialist with a strong foundation in data analysis, 
+                  visualization, and automation. With experience in Python, SQL, and Power BI, I specialize in transforming 
+                  raw data into actionable insights. My work spans clinical research, AI-driven analysis, and real-world data projects, 
+                  including studies on generative AI in education and large-scale data analytics initiatives.<br><br>
+                  Beyond my professional role, I continuously explore new challenges through personal projects, such as 
+                  automated data processing, crash analysis, and predictive modeling. Holding a Bachelor’s in Computer Science 
+                  and a Data Science & Analytics Certificate, I’m passionate about leveraging data to solve complex problems and drive informed decision-making.<br><br>
+                  I thrive on tackling new problems and refining my analytical skills through hands-on projects. Whether it's uncovering trends 
+                  in research data, optimizing workflows, or building data-driven solutions, I enjoy finding innovative ways to make information more meaningful and impactful.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="projects">
+        <p class="section_text_p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+          <div class="about-containers">
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img src="./assets/carauctionanalysis.jpg" alt="CarAuctionAnalysis image" class="project-img">
+              </div>
+              <h2 class="experience-sub-title project-title">Project One</h2>
+              <div class="btn-container">
+                <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Yaroslav1405/carAuctionAnalysis'">Github</button>
+              </div>
+            </div>
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img src="./assets/FileTidy.jpg" alt="FileTidy image" class="project-img">
+              </div>
+              <h2 class="experience-sub-title project-title">Project Two</h2>
+              <div class="btn-container">
+                <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Yaroslav1405/FileTidy'">Github</button>
+              </div>
+            </div>
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img src="./assets/coronavirus.jpg" alt="covid image" class="project-img">
+              </div>
+              <h2 class="experience-sub-title project-title">Project Three</h2>
+              <div class="btn-container">
+                <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Yaroslav1405/CovidAnalysis'">Github</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact">
+        <p class="section_text_p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+          <div class="contact-info-container">
+            <img src="./assets/email.svg" alt="email icon" class="icon contact-icon">
+            <p><a href="mailto:yaroslav.hinda@gmail.com">Email Me</a></p>
+          </div>
+          <div class="contact-info-container">
+            <img src="./assets/linkedin.svg" alt="LinkedIn icon" class="icon contact-icon">
+            <p><a href="https://www.linkedin.com/in/yaroslavhinda/">LinkedIn</a></p>
+          </div>
+          <div class="contact-info-container">
+            <img src="./assets/github.svg" alt="email icon" class="icon contact-icon">
+            <p><a href="https://github.com/Yaroslav1405">Github</a></p>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <nav>
+          <div class="nav-links-container">
+            <ul class="nav-links">
+              <li><a href="#about">About</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#contact">Contact</a></li>
+          </ul>
+          </div>
+        </nav>
+        <p>Copyright &#169; 2025 Yaroslav Hinda. All rights reserved.</p>
+      </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
