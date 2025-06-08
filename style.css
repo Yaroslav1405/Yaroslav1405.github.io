@@ -336,7 +336,11 @@ section {
 
 
 /* Projects Section */
-#projects {
+#da-projects {
+    position: relative;
+}
+
+#python-projects {
     position: relative;
 }
 
